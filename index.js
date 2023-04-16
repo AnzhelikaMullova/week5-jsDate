@@ -14,15 +14,28 @@
     let min = Math.floor(diff / 60000);//минуты
     if (min < 60) {
         return min + ' мин. назад';
-      }
-      
+    }
+
+else{
 
 
+    let time = date;     
+   time=[
+
+     time.getDate(),
+     time.getMonth() + 1,
+     time.getFullYear(),
+     time.getHours(),
+     time.getMinutes()
+
+   ]
+   console.log(`${time.getDate()}+${time.getMonth()}+${time.getFullYear()} +" " + ${time.getHours()}+":"+${time.getMinutes()}`);
+   
+
+}
 
 
+}
+formatDate(date);
 
 
-
- }
-
- formatDate(date);
